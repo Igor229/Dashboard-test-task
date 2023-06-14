@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$base-font: 'Poppins', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FAFBFF;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 305px;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+
+    &__logo {
+        margin-top: 35px;
+        & span {
+            font-family: $base-font;
+            font-size: 10px;
+            line-height: 15px;
+            color: #838383;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 30px;
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            padding: 15px;
+
+            .actions-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+
+                .actions-text {
+                    font-family: $base-font;
+                    color: #9197B3;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: -0.1em;
+                }
+
+                .actions-logo {
+                    width: 24px;
+                    height: 24px;
+                    stroke: #9197B3;
+                    fill: #9197B3;
+                    stroke-width: 0.1px;
+                }
+            }
+            
+            .actions-chevron {
+                width: 16px;
+                height: 16px;
+                stroke: #9197B3;
+            }
+        }
+        
+        &-item:hover {
+            cursor: pointer;
+            background: #5932EA;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+
+            & .actions-text {
+                color: #fff;
+            }
+
+            & .actions-logo {
+                stroke: #fff;
+                fill: #fff;
+            }
+
+            & .actions-chevron {
+                stroke: #fff;
+            }
+        }
+    }
+
+    &__userInfo {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 75px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        width: 250px;
+
+        .userInfo-icon {
+            width: 42px;
+            height: 42px;
+        }
+
+        .userInfo__text {
+            display: flex;
+            flex-direction: column;
+
+            &-name {
+                font-family: $base-font;
+                color: black;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0.01em;
+            }
+
+            &-jobPosition {
+                font-family: $base-font;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+                color: #757575;
+            }
+        }
+    }
+}
+
+.content-wrapper {
+    margin: 0 95px 0 375px;
+
+    .greetings-title {
+        padding-top: 40px;
+        font-family: $base-font;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000;
+    }
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAFBFF;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 305px;
+  height: 100vh;
+  position: fixed;
+  background: #fff;
+}
+.sidenav__logo {
+  margin-top: 35px;
+}
+.sidenav__logo span {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  color: #838383;
+}
+.sidenav__actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 30px;
+}
+.sidenav__actions-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  padding: 15px;
+}
+.sidenav__actions-item .actions-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.sidenav__actions-item .actions-container .actions-text {
+  font-family: "Poppins", sans-serif;
+  color: #9197B3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.1em;
+}
+.sidenav__actions-item .actions-container .actions-logo {
+  width: 24px;
+  height: 24px;
+  stroke: #9197B3;
+  fill: #9197B3;
+  stroke-width: 0.1px;
+}
+.sidenav__actions-item .actions-chevron {
+  width: 16px;
+  height: 16px;
+  stroke: #9197B3;
+}
+.sidenav__actions-item:hover {
+  cursor: pointer;
+  background: #5932EA;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.sidenav__actions-item:hover .actions-text {
+  color: #fff;
+}
+.sidenav__actions-item:hover .actions-logo {
+  stroke: #fff;
+  fill: #fff;
+}
+.sidenav__actions-item:hover .actions-chevron {
+  stroke: #fff;
+}
+.sidenav__userInfo {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width: 250px;
+}
+.sidenav__userInfo .userInfo-icon {
+  width: 42px;
+  height: 42px;
+}
+.sidenav__userInfo .userInfo__text {
+  display: flex;
+  flex-direction: column;
+}
+.sidenav__userInfo .userInfo__text-name {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+.sidenav__userInfo .userInfo__text-jobPosition {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.content-wrapper {
+  margin: 0 95px 0 375px;
+}
+.content-wrapper .greetings-title {
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */
