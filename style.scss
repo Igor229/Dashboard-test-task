@@ -17,6 +17,10 @@ body {
     background: #FAFBFF;
 }
 
+.menuToggle input {
+    display: none;
+}
+
 .sidenav {
     display: flex;
     flex-direction: column;
@@ -28,7 +32,8 @@ body {
 
     &__logo {
         margin-top: 35px;
-        & span {
+
+        .site-version {
             font-family: $base-font;
             font-size: 10px;
             line-height: 15px;
@@ -323,3 +328,5 @@ body {
         }
     }
 }
+
+@import 'responsive-styles';
